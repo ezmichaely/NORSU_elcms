@@ -1,0 +1,22 @@
+{
+  // "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:/Program Files/BraveSoftware/Brave-Browser/Application/brave.exe",
+  // "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
+  "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:/Users/MasterEZY/AppData/Local/Programs/Opera/launcher.exe",
+  // "liveServer.settings.AdvanceCustomBrowserCmdLine": "C:/Users/KimberlyM/AppData/Local/Programs/Opera/launcher.exe",
+
+  "liveSassCompile.settings.autoprefix": [],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/assets/styles/css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/assets/styles/css"
+    }
+  ],
+  "liveSassCompile.settings.generateMap": true
+}

@@ -1,0 +1,13 @@
+email: ezmichaely@gmail.com
+
+http://norsu-elcms.infinityfreeapp.com/
+
+
+username: norsuelcms
+password: Xc3MHVF15UsNiRr
+
+
+server = sql313.epizy.com
+dbname = epiz_33171320_norsuelcms
+username = epiz_33171320
+password = Xc3MHVF15UsNiRr

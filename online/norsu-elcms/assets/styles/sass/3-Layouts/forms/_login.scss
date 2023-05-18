@@ -1,0 +1,22 @@
+.form-login {
+    @include p($s3);
+    @include pt($s2);
+
+    @include breakpoint-md-up {
+        width: 50% !important;
+        border-left: 1px solid $primary;
+    }
+
+    @include breakpoint-md {
+        width: 100% !important;
+        border-top: 1px solid $primary;
+        // @include p($s2);
+        border-top-right-radius: 0rem !important;
+        border-bottom-left-radius: 0.25rem;
+    }
+
+    form {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+}

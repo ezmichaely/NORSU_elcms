@@ -1,0 +1,7 @@
+ul.alert {
+    list-style-type: disc !important;
+    font-weight: 500 !important;
+    font-size: 0.875rem !important;
+    @include py($s2);
+    @include px($s4);
+}

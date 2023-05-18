@@ -1,0 +1,188 @@
+.RegisterationForm {
+    .form-header {
+        img {
+            width: 100%;
+            object-fit: contain !important;
+        }
+    }
+
+    .MultistepRegisterStudentProgress {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+
+        .MultistepRegisterStudentProgressBtn {
+            transition-property: all;
+            transition-duration: 0.15s;
+            transition-timing-function: linear;
+            transition-delay: 0s;
+            position: relative;
+            padding-top: 20px;
+            color: $secondary;
+            // text-indent: -9999px;
+            border: none;
+            background-color: transparent;
+            outline: none !important;
+            cursor: pointer;
+            // border: 1px solid red;
+
+            @include breakpoint-sm-up {
+                text-indent: 0;
+            }
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                display: block;
+                width: 13px;
+                height: 13px;
+                content: '';
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                transition: all 0.15s linear 0s,
+                    -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+                transition: all 0.15s linear 0s,
+                    transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+                transition: all 0.15s linear 0s,
+                    transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s,
+                    -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+                border: 2px solid currentColor;
+                border-radius: 50%;
+                background-color: $white;
+                box-sizing: border-box;
+                z-index: 3;
+            }
+
+            &::after {
+                position: absolute;
+                top: 5px;
+                left: calc(-50% - 13px / 2);
+                transition-property: all;
+                transition-duration: 0.15s;
+                transition-timing-function: linear;
+                transition-delay: 0s;
+                display: block;
+                width: 100%;
+                height: 2px;
+                content: '';
+                background-color: currentColor;
+                z-index: 1;
+            }
+
+            &:first-child::after {
+                display: none;
+            }
+
+            &.finish {
+                color: $success !important;
+
+                &::before {
+                    -webkit-transform: translateX(-50%) scale(1.2);
+                    transform: translateX(-50%) scale(1.2);
+                    background-color: $success;
+                }
+            }
+
+            &.active {
+                color: $primary !important;
+
+                &::before {
+                    -webkit-transform: translateX(-50%) scale(1.2);
+                    transform: translateX(-50%) scale(1.2);
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+
+    .MultistepRegisterTeacherProgress {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+
+        .MultistepRegisterTeacherProgressBtn {
+            transition-property: all;
+            transition-duration: 0.15s;
+            transition-timing-function: linear;
+            transition-delay: 0s;
+            position: relative;
+            padding-top: 20px;
+            color: $secondary;
+            // text-indent: -9999px;
+            border: none;
+            background-color: transparent;
+            outline: none !important;
+            cursor: pointer;
+            // border: 1px solid red;
+
+            @include breakpoint-sm-up {
+                text-indent: 0;
+            }
+
+            &::before {
+                position: absolute;
+                top: 0;
+                left: 50%;
+                display: block;
+                width: 13px;
+                height: 13px;
+                content: '';
+                -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+                transition: all 0.15s linear 0s,
+                    -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+                transition: all 0.15s linear 0s,
+                    transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+                transition: all 0.15s linear 0s,
+                    transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s,
+                    -webkit-transform 0.15s cubic-bezier(0.05, 1.09, 0.16, 1.4) 0s;
+                border: 2px solid currentColor;
+                border-radius: 50%;
+                background-color: $white;
+                box-sizing: border-box;
+                z-index: 3;
+            }
+
+            &::after {
+                position: absolute;
+                top: 5px;
+                left: calc(-50% - 13px / 2);
+                transition-property: all;
+                transition-duration: 0.15s;
+                transition-timing-function: linear;
+                transition-delay: 0s;
+                display: block;
+                width: 100%;
+                height: 2px;
+                content: '';
+                background-color: currentColor;
+                z-index: 1;
+            }
+
+            &:first-child::after {
+                display: none;
+            }
+
+            &.finish {
+                color: $success !important;
+
+                &::before {
+                    -webkit-transform: translateX(-50%) scale(1.2);
+                    transform: translateX(-50%) scale(1.2);
+                    background-color: $success;
+                }
+            }
+
+            &.active {
+                color: $primary !important;
+
+                &::before {
+                    -webkit-transform: translateX(-50%) scale(1.2);
+                    transform: translateX(-50%) scale(1.2);
+                    background-color: $primary;
+                }
+            }
+
+        }
+
+    }
+}

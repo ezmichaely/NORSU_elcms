@@ -1,0 +1,39 @@
+.list-group {
+    &.class-tabs {
+        @include breakpoint-lg {
+            text-align: center;
+        }
+
+        .list-group-item {
+            @include breakpoint-xl {
+                @include px(0);
+                text-align: center;
+            }
+
+            @include breakpoint-lg {
+                @include px(0);
+                font-size: 14px;
+            }
+
+            @include breakpoint-md {
+                @include px(0);
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    .list-group-item {
+        @include px($s2);
+        cursor: pointer;
+        display: block;
+        // text-transform: uppercase;
+        color: $primary;
+
+        &:hover,
+        &.active {
+            background-color: $primary;
+            color: $white !important;
+        }
+    }
+}
