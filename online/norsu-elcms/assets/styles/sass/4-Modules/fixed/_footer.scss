@@ -1,9 +1,0 @@
-footer {
-    height: 40px;
-
-    .footer {
-        @include m(0px);
-        font-family: $title;
-        font-weight: 500;
-    }
-}
