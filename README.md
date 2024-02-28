@@ -29,7 +29,7 @@
 | College Dean | RegisterCollegeDean | RegisterCollegeDean |
 | DeptHead | RegisterDeptHead | RegisterDeptHead |
 | Instructor | RegisterInstructor | RegisterInstructor |
-| Student | RegisterStudent | RegisterStudent |
+| Student | StudentRegister | StudentRegister |
 
 
 ----
